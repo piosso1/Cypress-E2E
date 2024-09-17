@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "main": "https://github.com/piosso1/Cypress-E2E.git",
   "scripts": {
+    "test:addToCart": "npx cypress run --spec cypress/e2e/addToCartTest.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^13.14.2"
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^13.14.2",
+    "cypress-mochawesome-reporter": "^3.8.2"
   }
 }
