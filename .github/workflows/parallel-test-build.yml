@@ -32,12 +32,14 @@ jobs:
           command: npx cypress run cypress/e2e/registerTest.cy.js
 
       - name: Cypress Test Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: Mochawesome HTML Report - Reg Flow
           path: cypress/reports/html
 
       - name: Slack Notification
+        if: always()
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
