@@ -11,7 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          browser: npm run test:addToCart
+          browser: npx cypress run cypress/e2e/addToCartTest.cy.js
 
   Reg-Flow-run:
     runs-on: ubuntu-22.04
@@ -23,4 +23,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          browser: npm run test:registerFlow
+          browser: npx cypress run cypress/e2e/registerTest.cy.js
