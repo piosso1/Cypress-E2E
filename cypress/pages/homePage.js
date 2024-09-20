@@ -1,6 +1,6 @@
 export class homePage {
   weblocators = {
-    search_input: "input[placeholder='Search']",
+    search_input: "input[placeholder='Search']1",
     click_search: ".fa.fa-search",
     product: 'img[title="MacBook"]',
     addtocart:
