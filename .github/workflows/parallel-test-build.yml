@@ -23,4 +23,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          browser: npx run test:registerFlow
+          browser: npm run test:registerFlow
